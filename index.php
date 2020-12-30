@@ -1,7 +1,3 @@
-<?php
-    session_start();
-    $_SESSION['userId'] = 1;
-?>
 
 <!doctype html>
 <html lang="en-US">
@@ -27,8 +23,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         
         <!--styles-->
-         <link rel="stylesheet"  type="text/css" href= "css/style.css">
-        <link rel="stylesheet"  type="text/css" href= "css/responsive.css">
+         <link rel="stylesheet"  type="text/css" href= "assets/css/style.css">
+        <link rel="stylesheet"  type="text/css" href= "assets/css/responsive.css">
         
         <!--<script src="Prefix_Free.js"></script>   if js not supported in browser-->
         <!-- Latest compiled and minified CSS -->
@@ -45,9 +41,9 @@
         <!--Start Navigation -->
         <section class="container">
             <nav class="nav">
-                <a href="index.html"><img src="images/logo.jpg" class="logo" alt="logo"></a>
+                <a href="index.html"><img src="assets/images/logo.png" class="logo" alt="logo"></a>
                 
-                <?php
+                 <?php
                     if(isset($_SESSION['userId'])){
                         echo '<span class="menu-bar">
                             <div class="bar half start"></div>
@@ -67,7 +63,7 @@
                             <li><a href="#" class="nav-link">Login</a></li>
                         </ul>';
                     }
-                ?>   
+                // ?>   
 	        </nav>
         </section>
         <!--End Navigation -->
@@ -199,6 +195,6 @@
         </section>
         <!--End Footer-->
         
-        <script src="main.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
