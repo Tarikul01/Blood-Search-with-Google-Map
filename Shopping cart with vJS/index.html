@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Comfy House</title>
+        <!-- <link rel='shortcut icon' type='image/x-icon' href='resources/img/favicon.png'>   -->
+		<meta name="viewport" content="width = device-width, initial-scale=1.0">
+        <meta name="description" content="Shopping Cart with vanilla JS">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--for ie & edge support -->
+		<meta name="author" content="Sadia Afrin Tarin">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		
+		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/> used for animation on scroll-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<!--<script src="../travelBD/js/all.min.js"></script>-->
+		<!--<script src="Prefix_Free.js"></script>   if js not supported in browser-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel='stylesheet'>-->	
+        <!-- Latest compiled and minified CSS -->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+
+        <link rel="stylesheet"  type="text/css" href= "style.css">
+        <!-- jQuery library -->
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+
+        <!-- Popper JS -->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+
+        <!-- Latest compiled JavaScript -->
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
+        
+	</head>
+
+	<body>
+        <!--start navbar-->
+        <nav class="navbar">
+            <div class="navbar-center">
+                <span class="nav-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <img src="images/logo.svg" alt="store logo"/>
+                <div class="cart-btn">
+                    <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                    </span>
+                    <div class="cart-items">0</div>
+                </div>
+            </div>
+        </nav>
+        <!--end navbar-->
+        
+        <!--Start hero-->
+        <header class="hero">
+            <div class="banner">
+                <h1 class="banner-title">furniture collection</h1>
+                <button class="banner-btn">shop now</button>
+            </div>
+        </header>
+        <!--end hero-->
+        
+        <!--start products-->
+        <section class="products">
+            <div class="section-title">
+                <h2>our products</h2>
+            </div>
+            <div class="products-center">
+                <!--start single product-->
+                <article class="product">
+                    <div class="img-container">
+                        <img src="images/product-1.jpeg" alt="product" class="product-img"/>
+                        <button class="bag-btn" data-id="1">
+                            <i class="fas fa-shopping-cart"></i>
+                            add to bag
+                        </button>
+                    </div>
+                    <h3>queen bed</h3>
+                    <h4>$16</h4>
+                </article>
+                <!--end single product-->
+            </div>
+        </section>
+        <!--end products-->
+        
+        <!--start cart-->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2>your cart</h2>
+                <div class="cart-content">
+                    <!--start cart item-->
+                    <div class="cart-item">
+                        <img src="images/product-1.jpeg"/ alt="product"/>
+                        <div>
+                            <h4>queen bed</h4>
+                            <h5>$16</h5>
+                            <span class="remove-item">remove</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-up"></i>
+                            <p class="item-amount">1</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <!--end cart item-->
+                </div>
+                <div class="cart-footer">
+                    <h3>your total:$<span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">clear cart</button>
+                </div>
+            </div>
+        </div>
+        <!--end cart-->
+        
+        <script src="app.js"></script>
+    </body>
+</html>
